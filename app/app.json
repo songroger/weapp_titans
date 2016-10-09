@@ -1,0 +1,27 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tab/tab"
+    ],
+
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#373b3e",
+        "navigationBarTitleText": "Titans",
+        "windowBackground": "#1c1b16",
+        "navigationBarTextStyle": "white"
+    },
+
+    "tabBar": {
+        "list": [{
+        "pagePath": "pages/index/index",
+        "text": "Index"
+        }, {
+        "pagePath": "pages/tab/tab",
+        "text": "Tab"
+        }],
+        "color":"white",
+        "backgroundColor":"#6021da",
+        "selectedColor":"yellow"
+    }
+}

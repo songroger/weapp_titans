@@ -1,0 +1,13 @@
+<view>
+    <view class="page-top">
+        <view class="page-btn-wrap">
+            <text class="title" bindtap="gotoTab">沁园春·雪</text>
+            <!--<button class="page-btn" bindtap="gotoTab">Tab</button>-->
+        </view>
+    </view>
+    <view class="page-bottom">
+         <text class="content">
+            {{text}}
+        </text>
+    </view>
+</view>
