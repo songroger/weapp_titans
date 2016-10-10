@@ -26,12 +26,18 @@
 }
 .page-btn-wrap {
     position: absolute;
-    top: 470rpx;
+    top: 400rpx;
     width: 100%;
     text-align: center;
+    word-break:keep-all;
 }
 .title {
-    font-size: 50rpx;
+    font-size: 40rpx;
+    color: #FFEEDD;
+    font-weight: 900;
+}
+.author {
+    font-size: 25rpx;
     color: #FFEEDD;
     font-weight: 900;
 }
@@ -54,14 +60,19 @@
 .page-bottom {
     background-color: #FAFAD2;
     width: 100%;
-    height: 100%;
+    /*min-height: 100%;*/
     position: absolute;
     padding: 0 50rpx 50rpx;
     z-index: 1;
     box-sizing: border-box;
+    /*text-align: center;*/
 }
 .content{
     font-size: 40rpx;
+    color: #000;
+}
+.intro{
+    font-size: 30rpx;
     color: #000;
 }
 .qr-img {
