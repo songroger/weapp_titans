@@ -6,10 +6,11 @@
 
     "window": {
         "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#373b3e",
+        "navigationBarBackgroundColor": "#6021da",
         "navigationBarTitleText": "Titans",
         "windowBackground": "#1c1b16",
-        "navigationBarTextStyle": "white"
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh":"True"
     },
 
     "tabBar": {
@@ -22,6 +23,6 @@
         }],
         "color":"white",
         "backgroundColor":"#6021da",
-        "selectedColor":"yellow"
+        "selectedColor":"#BEBEBE"
     }
 }

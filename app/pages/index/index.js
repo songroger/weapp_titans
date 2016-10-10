@@ -5,8 +5,17 @@ Page({
     data: {
         text: initData
     },
+    onLoad: function(options) {
+        // Do some initialize when page load.
+    },
+    onShow: function() {
+        // Do something when page show.
+    },
     // go to tab page
     gotoTab() {
         wx.navigateTo({ url: '../tab/tab' });
+    },
+    onPullDownRefresh: function() {
+        // Do something when pull down
     },
 });

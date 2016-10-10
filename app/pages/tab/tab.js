@@ -4,6 +4,9 @@ Page({
   data: {
     text: initData
   },
+  onLoad: function(options) {
+    // Do some initialize when page load.
+    },
   add: function(e) {
     extraLine.push('other line')
     this.setData({
