@@ -1,6 +1,6 @@
 # 微信小程序示例
 
-![preview](screenshot.jpg)
+![preview](screenshot.gif)
 
 ## LICENSE
 
