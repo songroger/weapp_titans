@@ -16,6 +16,7 @@ Page({
     onShow: function() {
         // Do something when page show.
         var that = this
+        var appInstance = getApp()
         wx.request({
             url: api.getUrl('/random_poem'),
             data: {
@@ -30,8 +31,9 @@ Page({
                     text: res.data.content.replace(/<p>(.*?)<\/p>/g,"$1"),
                     author: "\n"+ res.data.author + "("+ res.data.dynasty + ")",
                     intro: "赏析："+ res.data.intro.replace(/<p>(.*?)<\/p>/g,"$1")
-
-                })
+                }),
+                wx.setStorageSync('poem_text', res.data.content.replace(/<p>(.*?)<\/p>/g,"$1")),
+                wx.setStorageSync('poem_title', res.data.title)
             },
             fail: function(res) {
                 that.setData({
@@ -41,9 +43,9 @@ Page({
             }
         })
     },
-    // go to tab page
+    // go to detail page
     gotoTab() {
-        wx.navigateTo({ url: '../tab/tab' });
+        wx.navigateTo({ url: '../detail/detail' });
     },
     onPullDownRefresh: function() {
         // Do something when pull down
