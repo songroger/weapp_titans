@@ -11,7 +11,7 @@
         "navigationBarTitleText": "Titans",
         "windowBackground": "#1c1b16",
         "navigationBarTextStyle": "white",
-        "enablePullDownRefresh":"True"
+        "enablePullDownRefresh":"true"
     },
 
     "tabBar": {
