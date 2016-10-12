@@ -17,6 +17,10 @@ Page({
         // Do something when page show.
         var that = this
         var appInstance = getApp()
+        var rdn = Math.ceil(Math.random()*4)
+        this.setData({
+            top_style: "background-image: url(../../images/bg" +rdn+".jpg);"
+        })
         wx.request({
             url: api.getUrl('/random_poem'),
             data: {

@@ -1,7 +1,7 @@
 .page-top {
     width: 750rpx;
     height: 594rpx;
-    background-image: url(../../images/bg.jpg);
+    /*background-image: url(../../images/bg.jpg);*/
     background-repeat: no-repeat;
     background-size: 750rpx 694rpx;
     background-position:0 -40rpx;
