@@ -30,7 +30,7 @@ Page({
                     title: res.data.title,
                     text: res.data.content.replace(/<p>(.*?)<\/p>/g,"$1"),
                     author: "\n"+ res.data.author + "("+ res.data.dynasty + ")",
-                    intro: "赏析："+ res.data.intro.replace(/<p>(.*?)<\/p>/g,"$1")
+                    intro: "赏析："+ (res.data.intro.replace(/<p>(.*?)<\/p>/g,"$1") ||"暂无，先看看其他内容吧~")
                 }),
                 wx.setStorageSync('poem_text', res.data.content.replace(/<p>(.*?)<\/p>/g,"$1")),
                 wx.setStorageSync('poem_title', res.data.title)
