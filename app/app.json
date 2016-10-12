@@ -17,12 +17,12 @@
     "tabBar": {
         "list": [{
         "pagePath": "pages/index/index",
-        "text": "Index",
+        "text": "Bunch",
         "iconPath": "images/in1.png",
         "selectedIconPath": "images/in2.png"
         }, {
         "pagePath": "pages/tab/tab",
-        "text": "Tab",
+        "text": "Piece",
         "iconPath": "images/ta1.png",
         "selectedIconPath": "images/ta2.png"
         }],
