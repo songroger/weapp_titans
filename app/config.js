@@ -3,6 +3,6 @@
  */
 module.exports = {
     /** 通讯域名 */
-    host: 'songroger.win',
+    host: 'songrogero.win',
     basePath: '/weapp',
 };
