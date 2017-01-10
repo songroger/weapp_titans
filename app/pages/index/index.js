@@ -15,7 +15,7 @@ Page({
         // Do some initialize when page load.
         var that = this
         var appInstance = getApp()
-        var rdn = Math.ceil(Math.random()*4)
+        var rdn = Math.ceil(Math.random()*2)
         this.setData({
             top_style: "background-image: url(../../images/bg" +rdn+".jpg);"
         })
@@ -38,7 +38,7 @@ Page({
     onPullDownRefresh: function() {
         // Do something when pull down
         var that = this
-        var rdn = Math.ceil(Math.random()*4)
+        var rdn = Math.ceil(Math.random()*2)
         this.setData({
             top_style: "background-image: url(../../images/bg" +rdn+".jpg);"
         })
@@ -46,7 +46,7 @@ Page({
               // console.log(data);
               that.setData({
                 title: data.title,
-                text: data.content.replace(/<p>(.*?)<\/p>/g,"$1"),
+                text: data.content.replace(/<p>(.*?)<\/p>/g,"$1").replace(/&nbsp;/g,""),
                 author: "\n"+ data.author + "("+ data.dynasty + ")",
                 intro: "赏析："+ (data.intro.replace(/<p>(.*?)<\/p>/g,"$1") ||"暂无，先看看其他内容吧~")
               }),

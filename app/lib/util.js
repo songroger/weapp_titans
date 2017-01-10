@@ -8,7 +8,7 @@ var extraLine = [];
 function loadBunchData(callback) {
     // load Bunch data
     wx.request({
-        url: api.getUrl('/random_poem'),
+        url: api.getUrl('/piece'),
         header: {
             'Content-Type': 'application/json'
         },
