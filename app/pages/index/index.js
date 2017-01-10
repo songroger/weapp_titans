@@ -46,7 +46,7 @@ Page({
               // console.log(data);
               that.setData({
                 title: data.title,
-                text: data.content.replace(/<p>(.*?)<\/p>/g,"$1").replace(/&nbsp;/g,""),
+                text: data.content.replace(/<p>(.*?)<\/p>/g,"$1"),
                 author: "\n"+ data.author + "("+ data.dynasty + ")",
                 intro: "赏析："+ (data.intro.replace(/<p>(.*?)<\/p>/g,"$1") ||"暂无，先看看其他内容吧~")
               }),
