@@ -20,7 +20,7 @@ Page({
         util.loadPieceData(function(data){
               // console.log(data);
               that.setData({
-                // title: data.work + " - " + data.author,
+                title: data.work + " - " + data.author,
                 text: data.quote
               })
         }); 
@@ -31,7 +31,7 @@ Page({
       util.loadPieceData(function(data){
               // console.log(data);
               that.setData({
-                // title: data.work + " - " + data.author,
+                title: data.work + " - " + data.author,
                 text: data.quote
               })
       });
