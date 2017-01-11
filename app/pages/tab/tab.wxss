@@ -1,5 +1,5 @@
 .btn-area{
-    background-image: url(../../images/gd.jpg);
+    background-image: url(https://songroger.duapp.com/static/img/gd.jpg);
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size:100%;

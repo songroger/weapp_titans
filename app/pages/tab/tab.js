@@ -2,7 +2,8 @@ const api = require('../../lib/api.js');
 const util = require('../../lib/util.js');
 Page({
   data: {
-    text: ""
+    text: "",
+    title:""
   },
   onShow: function(options) {
     // Do something when page show.
@@ -19,7 +20,7 @@ Page({
         util.loadPieceData(function(data){
               // console.log(data);
               that.setData({
-                title: data.work + " - " + data.author,
+                // title: data.work + " - " + data.author,
                 text: data.quote
               })
         }); 
@@ -30,7 +31,7 @@ Page({
       util.loadPieceData(function(data){
               // console.log(data);
               that.setData({
-                title: data.work + " - " + data.author,
+                // title: data.work + " - " + data.author,
                 text: data.quote
               })
       });
