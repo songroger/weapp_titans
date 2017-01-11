@@ -13,11 +13,18 @@ Page({
     },
     onLoad: function() {
         // Do some initialize when page load.
+        String.prototype.format= function(){
+           var args = arguments;
+           return this.replace(/\{(\d+)\}/g,function(s,i){
+             return args[i];
+           });}
         var that = this
         var appInstance = getApp()
         var rdn = Math.ceil(Math.random()*2)
+        var preUrl = api.getUrl("/static/img/bg")
+        var bgPic = "{0}{1}{2}".format(preUrl,rdn,".jpg")
         this.setData({
-            top_style: "background-image: url(../../images/bg" +rdn+".jpg);"
+            top_style: "background-image: url({0});".format(bgPic)
         })
         util.loadBunchData(function(data){
               // console.log(data);
@@ -39,8 +46,11 @@ Page({
         // Do something when pull down
         var that = this
         var rdn = Math.ceil(Math.random()*2)
+        var preUrl = api.getUrl("/static/img/bg")
+        var bgPic = "{0}{1}{2}".format(preUrl,rdn,".jpg")
+        console.log(bgPic)
         this.setData({
-            top_style: "background-image: url(../../images/bg" +rdn+".jpg);"
+            top_style: "background-image: url({0});".format(bgPic)
         })
         util.loadBunchData(function(data){
               // console.log(data);
